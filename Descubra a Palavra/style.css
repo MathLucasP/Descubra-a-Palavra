@@ -1,0 +1,274 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(119, 252, 245);
+    height: 100vh;
+    overflow: hidden;
+}
+
+#quiz-container {
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+}
+
+#quiz-container p {
+    margin: 10px 0;
+    font-family: Arial, sans-serif;
+}
+
+#quiz-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#btCadastrar {
+    transition: 300ms all linear;
+    border-radius: 7px;
+}
+
+#btCadastrar:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+}
+
+#quiz-form{
+    display: flex;
+}
+
+#pBlue, #pGreen {
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+#pBlue{
+  background-color: #007bff;
+  border: none;
+  color: aliceblue;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+#pBlue:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#pBlue:active {
+    transition: none;
+    background-color: #3597ff;
+}
+
+#pGreen{
+  background-color: #06ce42;
+  border: none;
+  color: aliceblue;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+#pGreen:hover {
+    background-color: #04912e;
+    transform: scale(1.05);
+}
+
+#pGreen:active {
+    transition: none;
+    background-color: #22eb08;
+}
+
+#pRed{
+  background-color: #e20000;
+  border: none;
+  color: aliceblue;
+  cursor: pointer;
+  transition: 300ms;
+  border-radius: 10px;
+}
+
+#pRed:hover {
+    background-color: #b30101;
+    transform: scale(1.05);
+}
+
+#pRed:active {
+    transition: none;
+    background-color: #f71818;
+}
+
+#btCadastrar{
+  background-color: #007bff;
+  border: none;
+  color: aliceblue;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+#btCadastrar:active {
+    transition: none;
+    background-color: #2e93ff;
+}
+
+#inputs input {
+    transition: 300ms all linear;
+    border-radius: 4px;        
+}
+
+#inputs input:hover {
+    background-color: rgb(219, 218, 218);
+}
+
+#ckTodos {
+    margin: 0;
+    width: 0px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, td {
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+td {
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td input[type="checkbox"] {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pReed{
+    background-color: #e20000;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+#palavraTable {
+    width: 40%;
+}
+
+#dicaTable {
+    width: 40%;
+}
+
+.container-dica {
+    align-items: center;
+}
+
+#outDica {
+    margin-left: 10px;
+    color: red;
+}
+
+tbody input {
+    cursor: pointer;
+}
+
+.container_palavra {
+    float: left;
+    margin-top: 50px;
+    background-color: rgb(197, 187, 187);
+    padding: 5px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+#condicao {
+    float: right;
+    margin-top: -10px;
+}
+
+#condicao-jogador {
+    border-radius: 20px;
+    width: 120px;
+    height: 120px;
+}
+
+#inLetra {
+    width: 75px !important;
+}
+
+#btChutar {
+    width: 100px !important;
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: rgb(32, 169, 238);
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: 200ms all linear;
+}
+
+#btChutar:hover {
+    background-color: rgb(22, 123, 173);
+}
+
+#btDica {
+    width: 25% !important;
+    height: 50px !important;
+    background-color: rgb(70, 237, 70);
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 200ms all linear;
+}
+
+#btDica:hover {
+    background-color: rgb(69, 180, 69);
+}
+
+#btTrocar {
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: #a810c7;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 200ms all linear;
+}
+
+#btTrocar:hover {
+    background-color: #751588;
+}
+
+#Jogo-main {
+    margin-top: 15px;
+}
+
+#condicao-nome {
+    margin-left: 0px
+}
+
+#main-chances {
+    margin-bottom: 10px;
+}
+
+#inLetra {
+    transition: 200ms all linear;
+}
+
+#inLetra:hover {
+   background-color: rgb(219, 218, 218);
+}
+
+#outErros, #outChances {
+    color: red;
+}

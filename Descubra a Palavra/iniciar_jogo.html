@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo - Descubra as Palavras</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <style>
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    #quiz-container {
+        width: 35%;
+        font-size: 15px;
+}
+
+#quiz-container input {
+        width: 80%;
+        font-size: 12px;
+}
+
+    </style>
+<div id="quiz-container">
+    <h1 style="font-family: arial ;">Jogo "Descubra a Palavra"</h1>
+        <form id="quiz-form">
+        <input type="button" value="Cadastrar Palavra" id="pBlue"  onclick="location='index.html'">
+
+        <input type="button" value="Listar Palavra" id="pGreen" onclick="location='listagem.html'">
+            
+        <input type="button" value="Iniciar Jogo" id="pRed" onclick="">
+        </form>
+    <p> Informe uma letra:
+        <input type="text" id="inLetra" maxlength="1">
+        <input type="button" id="btChutar" value="Chutar Letra">
+    </p>
+    <div id="Jogo-main">
+    <div class="container_palavra">
+        <h2>Palavra: <h3 id="outPalavra"></h3></h2>
+    </div>
+    <div id="condicao"> <h5 id="condicao-nome">Condiçâo do Jogador:</h5>
+        <img id="condicao-jogador" src="Imagem/Chance4.jpg">
+        </div>
+        <h3 id="outErrosMain"></h3> <h3 id="outErros"></h3>
+    </div>
+    <input type="button" id="btTrocar" value="Trocar Palavra">
+    <div class="container-dica">
+        <input type="button" id="btDica" value="Ver Dica"> <h3 id="custo"></h3>
+            <h3 id="main-chances">Chances: <i id="outChances"></i></h3>
+        <h3 id="outDica"></h3>
+    </div>
+</div>
+<script src="./javascript/jogo.js"></script>
+</body>
+</html>

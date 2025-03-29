@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Listagem</title>
+    </head>
+<body>
+    <div id="quiz-container">
+        <h1 style="font-family: arial ;">Jogo "Descubra a Palavra"</h1>
+        
+        <form id="quiz-form">
+            
+            <input type="button" value="Cadastrar Palavra" id="pBlue"  onclick="location='index.html'">
+
+            <input type="button" value="Listar Palavra" id="pGreen" onclick="">
+            
+            <input type="button" value="Iniciar Jogo" id="pRed" onclick="location='iniciar_jogo.html'">
+            
+            
+        </form>
+        <h1 style="font-family: arial ;">Listagem das palavras</h1>
+        
+        <table id="tabela">
+                <tbody>
+                <thead>
+                    <tr>
+                        <th>Palavra</th>
+                        <th>Dica</th>
+                        <th><input type="checkbox" name="Todos" id="ckTodos">Todos</th>
+                    </tr>
+                </thead>
+            
+                </tbody>
+            </table>
+            
+
+            <input type="button" value="Excluir selecionados" id="btn-excluir" class="pReed">
+    </div>
+
+    <script src="./javascript/listagem.js"></script>
+
+</body>
+</html>

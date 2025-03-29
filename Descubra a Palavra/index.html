@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jogo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(119, 252, 245);
+            height: 100vh;
+        }
+
+        #quiz-container {
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        #quiz-container p {
+            margin: 10px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #quiz-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        #btCadastrar {
+            transition: 300ms all linear;
+            border-radius: 7px;
+        }
+
+        #btCadastrar:hover {
+            background-color: #0056b3;
+            transform: scale(1.03);
+        }
+
+        #quiz-form{
+            display: flex;
+        }
+
+        #pBlue, #pGreen {
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+
+        #pBlue{
+          background-color: #007bff;
+          border: none;
+          color: aliceblue;
+          cursor: pointer;
+          transition: 300ms;
+        }
+
+        #pBlue:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        #pBlue:active {
+            transition: none;
+            background-color: #3597ff;
+        }
+
+        #pGreen{
+          background-color: #06ce42;
+          border: none;
+          color: aliceblue;
+          cursor: pointer;
+          transition: 300ms;
+        }
+        
+        #pGreen:hover {
+            background-color: #04912e;
+            transform: scale(1.05);
+        }
+
+        #pGreen:active {
+            transition: none;
+            background-color: #22eb08;
+        }
+
+        #pRed{
+          background-color: #e20000;
+          border: none;
+          color: aliceblue;
+          cursor: pointer;
+          transition: 300ms;
+          border-radius: 10px;
+        }
+
+        #pRed:hover {
+            background-color: #b30101;
+            transform: scale(1.05);
+        }
+
+        #pRed:active {
+            transition: none;
+            background-color: #f71818;
+        }
+
+        #btCadastrar{
+          background-color: #007bff;
+          border: none;
+          color: aliceblue;
+          cursor: pointer;
+          margin-top: 15px;
+        }
+
+        #btCadastrar:active {
+            transition: none;
+            background-color: #2e93ff;
+        }
+
+        #inputs input {
+            transition: 300ms all linear;
+            border-radius: 4px;        
+        }
+
+        #inputs input:hover {
+            background-color: rgb(219, 218, 218);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <h1 style="font-family: arial;">Jogo "Descubra a Palavra"</h1>
+        
+        <form id="quiz-form">
+            <input type="button" value="Cadastrar Palavra" id="pBlue" onclick="">
+            <input type="button" value="Listar Palavra" id="pGreen" onclick="location='listagem.html'">
+            <input type="button" value="Iniciar Jogo" id="pRed" onclick="location='iniciar_jogo.html'">
+            
+            
+        </form>
+        
+        <h1 style="font-family: arial ;">Listagem das palavras</h1>
+
+        <div id="inputs">
+        <p>Palavra</p>
+        <Input type="text" id="inPalavra" required placeholder="Insira uma palavra">
+
+            <p>Dica</p>
+        <Input type="text" id="inDica" required placeholder="Insira uma dica">
+            <br>
+        </div>
+        <Input type="button" value="Cadastrar" id="btCadastrar">
+
+    </div>
+    <script src="./javascript/cadastrar.js"></script>
+</body>
+</html>
